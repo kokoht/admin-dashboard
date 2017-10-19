@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin</title>
+
+    <!-- Bootstrap -->
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+
+<style media="screen">
+
+</style>
+
+  </head>
+  <body>
+    <div class="container-fluid display-table">
+      <div class="row display-table-row">
+        <!-- side menu -->
+        <div class="col-md-2 col-sm-1 hidden-xs display-table-cell valign-top" id="side-menu">
+          <h1 id="name" style="color:white" class="hidden-xs hidden-sm">Pawoon</h1>
+          <ul>
+            <li class="link active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                <span class="hidden-sm hidden-xs">Dashboard</span>
+              </a>
+            </li>
+            <li class="link active">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                <span class="hidden-sm hidden-xs">Laporan</span>
+              </a>
+            </li>
+
+<!-- bisnis -->
+            <li class="link">
+              <a href="#collapse-post" data-toggle="collapse" aria-controls="collapse-post">
+                <span class="glyphicon glyphicon-list-alt" aria-hidden="false"></span>
+                <span class="dropdown-toggle">
+                  BISNIS
+                  <span class="caret"></span></span>
+              </a>
+
+              <ul class="collapse collapseable" id="collapse-post">
+                <li><a href="#">Profil Bisnis</a></li>
+                <li><a href="#">Outlet</a></li>
+                <li><a href="#">Lisensi Perangkat</a></li>
+                <li><a href="#">Karyawan</a></li>
+              </ul>
+            </li>
+
+<!-- produk -->
+            <li class="link">
+              <a href="#collapse-produk" data-toggle="collapse" aria-controls="collapse-produk">
+                <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                <span class="dropdown-toggle">
+                  PRODUK
+                  <span class="caret"></span></span>
+              </a>
+
+              <ul class="collapse collapseable" id="collapse-produk">
+                <li><a href="#">Management Produk</a></li>
+                <li><a href="#">Promo & Diskon</a></li>
+              </ul>
+            </li>
+
+<!-- Inventory -->
+            <li class="link">
+              <a href="#collapse-inv" data-toggle="collapse" aria-controls="collapse-inv">
+                <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                <span class="dropdown-toggle">
+                  INVENTORI
+                  <span class="caret"></span></span>
+              </a>
+
+              <ul class="collapse collapseable" id="collapse-inv">
+                <li><a href="#">Stok Masuk</a></li>
+                <li><a href="#">Stok Keluar</a></li>
+                <li><a href="#">Stok Opname</a></li>
+                <li><a href="#">Transfer Stok</a></li>
+                <li><a href="#">Supplier</a></li>
+                <li><a href="#">Purchase Order</a></li>
+              </ul>
+            </li>
+
+<!-- Marketing -->
+            <li class="link">
+              <a href="#collapse-marketing" data-toggle="collapse" aria-controls="collapse-marketing">
+                <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                <span class="dropdown-toggle">
+                  MARKETING
+                  <span class="caret"></span></span>
+              </a>
+
+              <ul class="collapse collapseable" id="collapse-marketing">
+                <li><a href="#">Performa Marketing</a></li>
+                <li><a href="#">Pelanggan</a></li>
+                <li><a href="#">Aplikasi Pelanggan</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- main content area -->
+        <div class="col-md-10 col-sm-11 display-table-cell valign-top">
+          <div class="row">
+            <header id="nav-header" class="clearfix">
+              <div class="col-md-5">
+                <nav class="navbar-default pull-left">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </nav>
+                <button id="elapsed-time" type="button" name="button" class="btn btn-info">29 hari lagi trial berakhir</button>
+              </div>
+
+              <div class="col-md-7">
+                <ul class="pull-right">
+                  <li id="welcome" class="hidden-xs"><a href="#"> <span class="glyphicon glyphicon-gift"></span>Program Referral </a> </li>
+                  <li class="fixed-width">
+                    <a href="#">
+                      <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+                      <span class="label label-warning">3</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+          						Irfan Rosandi
+          						<span class="caret"></span></a>
+                  </li>
+                </ul>
+              </div>
+            </header>
+          </div>
+
+          <div id="dashboard-con">
+            <div class="row">
+              <div class="col-md-12 dashboard-left-cell">
+                <div class="admin-content-con">
+                  <header class="clearfix">
+                    <a class="" href="#" >Manajement Product > Tambah Produk</a>
+                  </header>
+
+                  <!-- here -->
+                  <form class="form-horizontal">
+                  <fieldset>
+                  <legend>Tambah Produk</legend>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="requestName">Nama Produk *</label>
+                    <div class="col-md-4">
+                    <input id="requestName" name="requestName" placeholder="Nama Produk" class="form-control input-md" required="true" type="text">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="category">Kategori</label>
+                    <div class="col-md-6">
+                      <select id="category" name="category" class="form-control">
+                        <option value="a"></option>
+                        <option value="b"></option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="askPrice">Harga Jual *</label>
+                    <div class="col-md-4">
+                    <input id="askPrice" name="askPrice" placeholder="Harga Jual" class="form-control input-md" required="true" type="text">
+                    </div>
+                  </div>
+<!-- prod ini dijual -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="askPrice">Produk ini Dijual? *</label>
+                    <div class="col-md-4">
+                    <input id="askPrice" name="askPrice"  class="form-control input-md" required="true" type="text">
+                    </div>
+                  </div>
+<!-- sku -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="askPrice">SKU (  <a class="" href="#" >apa ini?</a>)</label>
+                    <div class="col-md-4">
+                    <input id="askPrice" name="askPrice" class="form-control input-md" required="true" type="text">
+                    </div>
+                  </div>
+<!-- barcode -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="askPrice">Barcode</label>
+                    <div class="col-md-4">
+                    <input id="askPrice" name="askPrice"  class="form-control input-md" required="true" type="text">
+                    </div>
+                  </div>
+<!-- harga beli -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="askPrice">Harga Beli</label>
+                    <div class="col-md-4">
+                    <input id="askPrice" name="askPrice"  class="form-control input-md" required="true" type="text">
+                    </div>
+                  </div>
+<!-- desk -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="deskripsi">Deskripsi Product</label>
+                    <div class="col-md-4">
+                      <textarea class="form-control" id="deskripsi" name="deskripsi"></textarea>
+                    </div>
+                  </div>
+                  <!-- varian prod -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="varian">Varian Produk</label>
+                    <div class="col-md-4">
+                    <input id="varian" name="varian"  class="form-control input-md" required="true" type="text">
+                    </div>
+                  </div>
+                  <!-- opsi tambahan -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="opsi">Opsi Tambahan</label>
+                    <div class="col-md-4">
+                    <input id="opsi" name="opsi"  class="form-control input-md" required="true" type="text">
+                    </div>
+                  </div>
+                  <!-- bahan baku -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="raw">Bahan Baku</label>
+                    <div class="col-md-4">
+                    <input id="raw" name="raw"  class="form-control input-md" required="true" type="text">
+                    </div>
+                  </div>
+                  <!-- stok -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="stok">Stok</label>
+                    <div class="col-md-4">
+                    <input id="stok" name="stok"  class="form-control input-md" required="true" type="text">
+                    </div>
+                  </div>
+
+                  <!-- Button -->
+                  <div class="form-group">
+                    <label class="col-md-4 control-label" for="submit"></label>
+                    <div class="col-md-4">
+                      <button id="submit" name="submit" class="btn btn-info">Pengaturan Harga & Status Dijual</button>
+                    </div>
+                  </div>
+                  </fieldset>
+                  </form>
+                  <!-- end here -->
+
+                  <footer class="clearfix">
+                  <button id="submitall" name="submit" class="btn btn-primary">SIMPAN</button>
+                  </footer>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+          <div class="row">
+            <footer id="admin-footer" class="clearfix">
+              <div class="pull-left"><b>Copyright </b>&copy; 2017</div>
+              <div class="pull-right">pawoon</div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../vendor/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="js/default.js"></script>
+  </body>
+</html>
